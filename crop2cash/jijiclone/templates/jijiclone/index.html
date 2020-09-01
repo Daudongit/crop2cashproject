@@ -1,0 +1,17 @@
+{% load static %}
+{% load mix %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiji Clone App</title>
+    {% comment %} <link href="{% static 'css/custom-bs4-3.css' %}" rel="stylesheet"> {% endcomment %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div id="app"></div>
+    <!--<script src="{% static 'home/js/bootstrap.min.js' %}"></script>-->
+    <script src="{% mix 'build/project.js' 'static' %}"></script>
+</body>
+</html>
